@@ -1,97 +1,84 @@
-# 🚀 3D Developer Portfolio Website (React + TypeScript + Three.js)
+# 🚀 Interactive 3D AI Developer Portfolio
 
-[![3D portfolio preview (click to watch video)](./Screenshot_2026-04-08_22-10-00.png)](./screen-capture%20(13).webm)
+A state-of-the-art, high-performance **3D Developer Portfolio** featuring an interactive 3D avatar workspace, a custom smooth-scrolling experience, an integrated AI chatbot assistant, and a fully playable chess game against Stockfish. Built with **React**, **TypeScript**, **Three.js (React Three Fiber)**, **GSAP**, and **Lenis**.
 
-A modern, high-performance **3D developer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, and **WebGL**.
-
-If you’re a developer looking for a **portfolio template** that feels premium, interactive, and memorable—this repo is for you.
-
-> Live preview: https://github.com/arunpiyush25/portfolio-website
+[![3D portfolio preview](./web-home.png)]
 
 ---
 
-## ✨ Highlights
+## 🌟 Key Features
 
-- **3D / WebGL experience** powered by **Three.js**
-- Smooth animations with **GSAP**
-- Modern **React + TypeScript** codebase
-- Fast, responsive UI (desktop + mobile)
-- Designed for developers, engineers, programmers, and creators
+*   **🎮 Interactive 3D Workspace:** Powered by **Three.js** and **React Three Fiber**, showcasing a detailed 3D setup with dynamic camera movements, reactive screen lights, and smooth controls.
+*   **🤖 AI Chatbot Assistant:** A custom intelligent chat widget integrated directly into the portfolio to guide visitors, answer questions, and showcase agentic AI capabilities.
+*   **♟️ Playable Chess vs. Stockfish:** An interactive `/play` page where users can play chess against the Stockfish AI engine, complete with real-time move history and captured pieces layout.
+*   **✨ Smooth Scrolling & Page Animations:** Powered by **Lenis** and **GSAP ScrollTrigger** for responsive scrolling timelines and text splitting effects.
+*   **⚙️ Config-Driven Layout:** All text, projects, experiences, and social links are centralized in a single file (`src/config.ts`), making customization seamless.
+*   **📱 Fully Responsive:** Fully optimized for mobile and desktop viewports, disabling resource-heavy 3D assets on smaller viewports for faster performance.
 
 ---
 
-## 🧰 Tech Stack
+## 🛠️ Tech Stack
 
-- **React**
-- **TypeScript**
-- **Three.js / WebGL**
-- **GSAP**
-- **HTML / CSS / JavaScript**
+*   **Frontend Core:** React 18, TypeScript, Vite, CSS
+*   **3D Graphics:** React Three Fiber, `@react-three/drei`, Three.js
+*   **Physics & Mathematics:** Three-stdlib, `@react-three/cannon` / `@react-three/rapier`
+*   **Animations:** GSAP (GreenSock Animation Platform) + ScrollTrigger
+*   **Smooth Scroll:** Lenis Scroll Engine
+*   **Chess Game Engine:** Chess.js, Stockfish.js
 
 ---
 
 ## 🚀 Getting Started
 
-### 1) Clone
-
+### 1. Clone the repository
 ```bash
 git clone https://github.com/arunpiyush25/portfolio-website.git
 cd portfolio-website
 ```
 
-### 2) Install
-
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 3) Run locally
+### 3. Setup Environment Variables
+Create a `.env` file in the root directory (based on `.env.example`):
+```env
+VITE_CHATBOT_API_URL=your_api_url_here
+```
 
+### 4. Run the development server
 ```bash
 npm run dev
 ```
 
-### 4) Build
-
+### 5. Build for Production
 ```bash
 npm run build
 ```
 
 ---
 
-## 🧩 Customize (Quick Guide)
+## ⚙️ How to Customize
 
-- **Your name + hero section text**
-- **Projects list**
-- **Social links** (GitHub, LinkedIn, email)
-- **SEO meta title/description**
+All content in the portfolio is managed through a single configuration file. Open [src/config.ts](file:///c:/Users/ASUS/Portfolio-Website/src/config.ts) to edit:
 
----
-
-## ⭐ Support
-
-If you found this useful:
-
-- Please **star** the repository (it helps a lot)
-- Share it with a friend who needs a portfolio template
-- Sponsor via the **Sponsor** button on GitHub (if available in your region)
+1.  **Developer Information:** Edit your name, role description, and titles.
+2.  **Experiences & Education:** Add your career milestone items, descriptions, and list of technologies.
+3.  **Projects:** Insert your portfolio items including images, descriptions, categories, and links.
+4.  **Contact:** Set your email, social profile links, and configure your Web3Forms token for the contact form.
+5.  **Skills:** Modify the core skill blocks and tag lists.
 
 ---
 
 ## 🤝 Connect
 
-- LinkedIn: https://www.linkedin.com/in/piyushkumararun
-
----
-
-## 🏷️ Recommended GitHub Topics (add in repo settings)
-
-Add these topics to improve GitHub search visibility:
-
-`portfolio` `developer-portfolio` `portfolio-website` `portfolio-template` `3d-portfolio` `react` `typescript` `threejs` `webgl` `gsap` `frontend` `vite`
+*   **GitHub:** [arunpiyush25](https://github.com/arunpiyush25)
+*   **LinkedIn:** [Piyush Arun](https://linkedin.com/in/piyushkumararun)
+*   **Email:** arunpiyush10@gmail.com
 
 ---
 
 ## 🪪 License
 
-This project is open source and available under the **MIT License**. See [LICENSE](LICENSE).
+This project is open-source and licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
