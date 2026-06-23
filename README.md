@@ -1,8 +1,8 @@
-# 🚀 Interactive 3D AI Developer Portfolio
+# 🚀 Interactive 3D Software Engineer (AI) Portfolio
 
-A state-of-the-art, high-performance **3D Developer Portfolio** featuring an interactive 3D avatar workspace, a custom smooth-scrolling experience, an integrated AI chatbot assistant, and a fully playable chess game against Stockfish. Built with **React**, **TypeScript**, **Three.js (React Three Fiber)**, **GSAP**, and **Lenis**.
+A state-of-the-art, high-performance **3D Portfolio** featuring an interactive 3D avatar workspace, a custom smooth-scrolling experience and an integrated AI chatbot assistant. Built with **React**, **TypeScript**, **Three.js (React Three Fiber)**, **GSAP**, and **Lenis**.
 
-[![3D portfolio preview](./web-home.png)]
+![3D portfolio preview](./web-home.png)
 
 ---
 
@@ -10,7 +10,6 @@ A state-of-the-art, high-performance **3D Developer Portfolio** featuring an int
 
 *   **🎮 Interactive 3D Workspace:** Powered by **Three.js** and **React Three Fiber**, showcasing a detailed 3D setup with dynamic camera movements, reactive screen lights, and smooth controls.
 *   **🤖 AI Chatbot Assistant:** A custom intelligent chat widget integrated directly into the portfolio to guide visitors, answer questions, and showcase agentic AI capabilities.
-*   **♟️ Playable Chess vs. Stockfish:** An interactive `/play` page where users can play chess against the Stockfish AI engine, complete with real-time move history and captured pieces layout.
 *   **✨ Smooth Scrolling & Page Animations:** Powered by **Lenis** and **GSAP ScrollTrigger** for responsive scrolling timelines and text splitting effects.
 *   **⚙️ Config-Driven Layout:** All text, projects, experiences, and social links are centralized in a single file (`src/config.ts`), making customization seamless.
 *   **📱 Fully Responsive:** Fully optimized for mobile and desktop viewports, disabling resource-heavy 3D assets on smaller viewports for faster performance.
@@ -24,8 +23,6 @@ A state-of-the-art, high-performance **3D Developer Portfolio** featuring an int
 *   **Physics & Mathematics:** Three-stdlib, `@react-three/cannon` / `@react-three/rapier`
 *   **Animations:** GSAP (GreenSock Animation Platform) + ScrollTrigger
 *   **Smooth Scroll:** Lenis Scroll Engine
-*   **Chess Game Engine:** Chess.js, Stockfish.js
-
 ---
 
 ## 🚀 Getting Started
