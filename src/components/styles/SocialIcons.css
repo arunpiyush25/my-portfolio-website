@@ -1,0 +1,195 @@
+.icons-section {
+  position: fixed;
+  max-width: var(--cMaxWidth);
+  width: var(--cWidth);
+  bottom: 0;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-icons {
+  position: absolute;
+  left: -20px;
+  bottom: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999;
+  padding: 10px;
+}
+.social-icons:hover {
+  transition: 0.3s;
+  color: var(--backgroundColor);
+}
+.social-icons a:hover {
+  color: var(--backgroundColor);
+  /* transform: scale(1.2); */
+}
+.social-icons span {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+}
+.social-icons a {
+  --siLeft: 50%;
+  --siTop: 50%;
+  position: absolute;
+  left: var(--siLeft, 50%);
+  top: var(--siTop, 50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-size: 23px;
+  will-change: left, top;
+  transition: transform 0.3s ease-out;
+}
+.resume-button {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  gap: 5px;
+  bottom: 40px;
+  right: 0;
+  width: auto;
+  text-wrap: nowrap;
+  letter-spacing: 4px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  color: #5e5e5e;
+  cursor: pointer;
+  transition: 0.5s;
+  transform-origin: left bottom;
+  transform: translateX(100%) rotateZ(-90deg);
+}
+.resume-button:hover {
+  color: #fff;
+}
+div.resume-button span {
+  color: #fff;
+  font-size: 17px;
+  margin-top: -1px;
+  display: flex;
+  align-items: center;
+}
+.check-line {
+  position: fixed;
+  top: 655px;
+  left: 0;
+  height: 1px;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 99999;
+}
+@media only screen and (min-width: 900px) {
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  .social-icons a {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .resume-button {
+    transform: none;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  div.resume-button span {
+    font-size: 23px;
+    margin-top: -1.5px;
+  }
+}
+
+/* Chatbot Mobile Trigger Button (floating bottom-left) */
+.chatbot-mobile-trigger {
+  display: flex;
+  position: fixed;
+  bottom: 120px;
+  left: 20px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--accentColor);
+  border: none;
+  color: #000;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(194, 164, 255, 0.45);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.chatbot-mobile-trigger.open {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  box-shadow: none;
+  transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 900px) {
+  .chatbot-mobile-trigger {
+    display: none; /* Hide mobile trigger button on desktop */
+  }
+}
+
+/* Chatbot Desktop Trigger Animations & Styling */
+.chatbot-icon-trigger {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(194, 164, 255, 0.08) !important;
+  border: 1px solid rgba(194, 164, 255, 0.25) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: var(--accentColor) !important;
+  font-size: 24px;
+  box-shadow: 0 4px 15px rgba(194, 164, 255, 0.15);
+  animation: chatbotBreath 3s ease-in-out infinite;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.chatbot-icon-trigger:hover {
+  animation: none;
+  background: var(--accentColor) !important;
+  color: #000 !important;
+  border-color: var(--accentColor) !important;
+  transform: translate(-50%, -50%) scale(1.15) !important;
+  box-shadow: 0 8px 30px rgba(194, 164, 255, 0.5) !important;
+}
+
+@keyframes chatbotBreath {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 4px 15px rgba(194, 164, 255, 0.15);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.08);
+    box-shadow: 0 6px 25px rgba(194, 164, 255, 0.45);
+  }
+}
+
+/* Mobile Trigger Pulse Animation */
+.chatbot-mobile-trigger {
+  animation: chatbotMobilePulse 3s ease-in-out infinite;
+}
+
+.chatbot-mobile-trigger.open {
+  animation: none;
+}
+
+@keyframes chatbotMobilePulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 25px rgba(194, 164, 255, 0.45);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 12px 35px rgba(194, 164, 255, 0.7);
+  }
+}
