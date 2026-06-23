@@ -3,6 +3,7 @@
 A state-of-the-art, high-performance **3D Portfolio** featuring an interactive 3D avatar workspace, a custom smooth-scrolling experience and an integrated AI chatbot assistant. Built with **React**, **TypeScript**, **Three.js (React Three Fiber)**, **GSAP**, and **Lenis**.
 
 ![3D portfolio preview](./web-home.png)
+Link: https://piyush-arun.vercel.app/ 
 
 ---
 
